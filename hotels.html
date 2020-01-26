@@ -22,8 +22,45 @@
   </header>
 
   <main>
-    <!--    пропущщенный блок с формой-->
+    <ul>
+      <li>Инфраструктура:</li>
+      <li>Тип жилья:</li>
+      <li>Стоимость в сутки (<span>Р</span>):</li>
+    </ul>
+    <form action="" method="get">
+      <input class="comfort" type="checkbox" checked name="pool">
+      <p>Бассейн</p>
+      <input class="comfort" type="checkbox" name="parking">
+      <p>Парковка</p>
+      <input class="comfort" type="checkbox" name="wifi">
+      <p>Wi-Fi</p>
+      <input class="type__" type="checkbox" checked name="hotel">
+      <p>Гостиница</p>
+      <input class="type__" type="checkbox" checked name="motel">
+      <p>Мотель</p>
+      <input class="type__" type="checkbox" checked name="aparts">
+      <p>Апартаменты</p>
+
+      <!--      форма фильтра стоимости-->
+      
+      <input class="button-transparrent" type="submit" value="Показать">
+    </form>
     
+    <section class="result">
+      <h2>Найдено: <span>3</span></h2>
+      
+      <b>Сортировка:</b>
+      <ul>
+        <li class="for-price">По цене</li>
+        <li class="for-type"><a href="">По типу</a></li>
+        <li class="for-rating"><a href="">По рейтингу</a></li>
+      </ul>
+      <div class="up-down-arrows">
+        <button type="button"><img src="https://via.placeholder.com/11x10" alt="arrow-up"></button>
+        <button type="button"><img src="https://via.placeholder.com/11x10" alt="arrow-down"></button>
+      </div>
+    </section>
+
     <table class="hotels-search-result">
       <tr>
         <td class="preview-img" rowspan="3"><img src="https://via.placeholder.com/135x90" width="135" height="90" alt="amara-hotel"></td>
@@ -32,8 +69,8 @@
       </tr>
       <tr>
         <td>
-        <p class="type">Гостиница</p>
-        <p class="price">от 4 000 Р.</p>
+          <p class="type">Гостиница</p>
+          <p class="price">от 4 000 Р.</p>
         </td>
       </tr>
       <tr>
@@ -47,7 +84,7 @@
           </p>
         </td>
       </tr>
-      
+
       <tr>
         <td class="preview-img" rowspan="3"><img src="https://via.placeholder.com/135x90" width="135" height="90" alt="amara-hotel"></td>
         <td class="name-hotel">Desert Quail Inn</td>
@@ -55,8 +92,8 @@
       </tr>
       <tr>
         <td>
-        <p class="type">Гостиница</p>
-        <p class="price">от 3 000 Р.</p>
+          <p class="type">Гостиница</p>
+          <p class="price">от 3 000 Р.</p>
         </td>
       </tr>
       <tr>
@@ -70,7 +107,7 @@
           </p>
         </td>
       </tr>
-      
+
       <tr>
         <td class="preview-img" rowspan="3"><img src="https://via.placeholder.com/135x90" width="135" height="90" alt="amara-hotel"></td>
         <td class="name-hotel">Villas at Poco Diablo</td>
@@ -78,8 +115,8 @@
       </tr>
       <tr>
         <td>
-        <p class="type">Гостиница</p>
-        <p class="price">от 2 000 Р.</p>
+          <p class="type">Гостиница</p>
+          <p class="price">от 2 000 Р.</p>
         </td>
       </tr>
       <tr>
