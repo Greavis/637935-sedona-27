@@ -40,8 +40,8 @@
       </div>
 
       <div class="background-img__first"></div>
-      <div class="block__little-things">
-        <div class="blt">
+      <ul class="block__little-things">
+        <li>
           <ul>
             <li class="house-ico"><img src="https://via.placeholder.com/75x72" alt="house"></li>
             <li class="blt-header">
@@ -49,8 +49,8 @@
             </li>
             <li class="tiny-grey">Рекомендуем пожить в настоящем мотеле, всё как в кино!</li>
           </ul>
-        </div>
-        <div class="blt">
+        </li>
+        <li>
           <ul>
             <li class="burger-ico"><img src="https://via.placeholder.com/74x70" alt="burger"></li>
             <li class="blt-header">
@@ -58,8 +58,8 @@
             </li>
             <li class="tiny-grey">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</li>
           </ul>
-        </div>
-        <div class="blt">
+        </li>
+        <li>
           <ul>
             <li class="gift-ico"><img src="https://via.placeholder.com/64x76" alt="gift"></li>
             <li class="blt-header">
@@ -67,8 +67,8 @@
             </li>
             <li class="tiny-grey">Не только китайского, но и местного производства!</li>
           </ul>
-        </div>
-      </div>
+        </li>
+      </ul>
     </section>
 
     <section class="cause__second">
@@ -79,39 +79,42 @@
       </div>
 
       <div class="background-img__second"></div>
-      <div class="blt">
-        <ul>
-          <li>
-            <h2>Небольшая площадь</h2>
-          </li>
-          <li class="blt-header">— №3 —</li>
-          <li>Все достопримечательности находятся очень близко</li>
-        </ul>
-      </div>
-      <div class="blt">
-        <ul>
-          <li>
-            <h2>Красивая дорога</h2>
-          </li>
-          <li class="blt-header">— №4 —</li>
-          <li>Ехать в Седону из Лас-Вегаса совсем не скучно!</li>
-        </ul>
-      </div>
-      <div class="blt">
-        <ul>
-          <li>
-            <h2>Мало туристов</h2>
-          </li>
-          <li class="blt-header">— №5 —</li>
-          <li>Большинство едет в гранд каньон и толпится там</li>
-        </ul>
-      </div>
+      <ul class="block__little-things">
+        <li>
+          <ul>
+            <li>
+              <h2>Небольшая площадь</h2>
+            </li>
+            <li class="blt-header">— №3 —</li>
+            <li>Все достопримечательности находятся очень близко</li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>
+              <h2>Красивая дорога</h2>
+            </li>
+            <li class="blt-header">— №4 —</li>
+            <li>Ехать в Седону из Лас-Вегаса совсем не скучно!</li>
+          </ul>
+        </li>
+        <li>
+          <ul>
+            <li>
+              <h2>Мало туристов</h2>
+            </li>
+            <li class="blt-header">— №5 —</li>
+            <li>Большинство едет в гранд каньон и толпится там</li>
+          </ul>
+        </li>
+      </ul>
     </section>
 
     <section>
       <h2>Заинтересовались ?</h2>
       <p class="min-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <div class="background-img__map"></div>
+
       <div class="modal search-hotel">
         <h3>Поиск гостиницы в Седоне</h3>
 
@@ -122,12 +125,20 @@
           <li class="info-customer info-customer-right">Дети:</li>
         </ul>
 
-        <b class="select">24 апреля 2017</b>
-        <img class="FA-calendar" src="https://via.placeholder.com/21x22" alt="calendar">
-        <b class="select">4 июля 2017</b>
-        <img class="FA-calendar" src="https://via.placeholder.com/21x22" alt="calendar">
-        <b class="input-button">2</b>
-        <b class="input-button">0</b>
+        <div block___>
+          <div class="sign-in">
+            <b class="select">24 апреля 2017</b>
+            <img class="FA-calendar" src="https://via.placeholder.com/21x22" alt="calendar">
+          </div>
+          <div class="sign-out">
+            <b class="select">4 июля 2017</b>
+            <img class="FA-calendar" src="https://via.placeholder.com/21x22" alt="calendar">
+          </div>
+          <div class="buttons">
+            <b class="input-button">2</b>
+            <b class="input-button">0</b>
+          </div>
+        </div>
 
         <button class="search-button" type="submit">Найти</button>
       </div>
