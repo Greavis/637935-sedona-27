@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
   <meta charset="utf-8">
   <!--    <link rel="stylesheet" href="/css/style.css">-->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
@@ -22,33 +23,55 @@
   </header>
 
   <main>
-    <ul>
+    <ul class="options">
       <li>Инфраструктура:</li>
       <li>Тип жилья:</li>
       <li>Стоимость в сутки (<span>Р</span>):</li>
     </ul>
     <form action="" method="get">
-      <input class="comfort" type="checkbox" checked name="pool">
-      <p>Бассейн</p>
-      <input class="comfort" type="checkbox" name="parking">
-      <p>Парковка</p>
-      <input class="comfort" type="checkbox" name="wifi">
-      <p>Wi-Fi</p>
-      <input class="type__" type="checkbox" checked name="hotel">
-      <p>Гостиница</p>
-      <input class="type__" type="checkbox" checked name="motel">
-      <p>Мотель</p>
-      <input class="type__" type="checkbox" checked name="aparts">
-      <p>Апартаменты</p>
+      <div class="block_left-first">
+        <ul>
+          <li class="comfort">
+            <label for="pool"><p>Бассейн</label>
+            <input type="checkbox" checked name="pool" id="pool">
+          </li>
+          <li class="comfort">
+            <label for="parking">Парковка</label>
+            <input type="checkbox" name="parking" id="parking">
+          </li>
+          <li class="comfort">
+            <label for="wifi">Wi-Fi</label>
+            <input type="checkbox" name="wifi" id="wifi">
+          </li>
+        </ul>
+      </div>
 
-      <!--      форма фильтра стоимости-->
-      
-      <input class="button-transparrent" type="submit" value="Показать">
+      <div class="block_left-second">
+        <ul>
+          <li class="type__">
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" checked name="hotel" id="hotel">
+          </li>
+          <li class="type__">
+            <label for="motel">Мотель</label>
+            <input type="checkbox" checked name="motel" id="motel">
+          </li>
+          <li class="type__">
+            <label for="aparts">Апартаменты</label>
+            <input type="checkbox" checked name="aparts" id="aparts">
+          </li>
+        </ul>
+      </div>
+
+      <div class="block_right">
+        <!--      форма фильтра стоимости-->
+        <input class="button-transparrent" type="submit" value="Показать">
+      </div>
     </form>
-    
+
     <section class="result">
       <h2>Найдено: <span>3</span></h2>
-      
+
       <b>Сортировка:</b>
       <ul>
         <li class="for-price">По цене</li>
@@ -154,4 +177,6 @@
       </a>
     </div>
   </footer>
-</body></html>
+</body>
+
+</html>
