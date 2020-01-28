@@ -1,0 +1,81 @@
+html {
+  background-color: #f2f2f2;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 1200px;
+  font-family: 'PT Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0 auto;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  -moz-box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*относительно nav выравнивается логотип*/
+.header-menu {
+  position: relative;
+}
+
+.menu-item {
+  width: 239px;
+  height: 56px;
+  float: left;
+  text-transform: uppercase;
+  position: relative;
+  background-color: #fff;
+}
+/*относительно элементов списка выравниваются ссылки*/
+.menu-item > a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  position: absolute;
+  top: 18px;
+  left: 65px;
+}
+
+.empty-center {
+  width: 244px;
+}
+
+.logo {
+  position: absolute;
+  left: 530px;
+  z-index: 9000;
+}
+
+/*    ---     начало MAIN    ---    */
+.visually-hidden {
+  display: none;
+}
+
+.block-valley {
+  position: relative;
+  top: 56px;
+}
+.background-valley {
+  width: 1200px;
+  height: 800px;
+  background: #fff url("/img/background_photo.png") no-repeat 0px -83px;
+}
+.welcome {
+  position: absolute;
+  top: 76px;
+  left: 369px;
+  width: 459px;
+  height: 353px;
+  background-image: url(/img/welcome.webp);
+}
+.svg-mask {
+  
+}
