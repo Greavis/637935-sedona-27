@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <!--  <link rel="stylesheet" href="/css/style.css">-->
   <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
   <title>HTML Academy: Седона</title>
 </head>
@@ -12,11 +11,11 @@
   <header>
     <nav class="header-menu">
       <ul>
-        <li class="menu-item"><a href="">Информация</a></li>
-        <li class="menu-item"><a href="">Фото и видео</a></li>
+        <li class="menu-item" title="Главная страница"><a href="">Информация</a></li>
+        <li class="menu-item" title="Обзоры гостиниц и города"><a href="">Фото и видео</a></li>
         <li class="menu-item empty-center"></li>
-        <li class="menu-item"><a href="">Карта штата</a></li>
-        <li class="menu-item"><a href="hotels.html">Гостиницы</a></li>
+        <li class="menu-item" title="Посмотреть на карте"><a href="">Карта штата</a></li>
+        <li class="menu-item" title="Выбрать гостиницу"><a href="hotels.html">Гостиницы</a></li>
       </ul>
       <img class="logo" src="https://via.placeholder.com/140x72" width="140" height="72" alt="logo-sedona">
     </nav>
@@ -41,11 +40,11 @@
           Седона — не аттракцион для туристов, там течёт своя жизнь</p>
       </div>
 
-      <img src="img/real-city.jpg" width="800" height="401" alt="real-city">
+      <img src="img/real-city.jpg" width="800" height="401" alt="Седона – пустынный город в американском штате Аризона вблизи Флагстаффа, окруженный скальными останцами красного цвета, каньоном с крутыми стенами и сосновыми лесами.">
       <ul class="block__little-things">
         <li>
           <ul>
-            <li class="house-ico"><img src="https://via.placeholder.com/75x72" alt="house"></li>
+            <li class="house-ico"><img src="https://via.placeholder.com/75x72" alt="Иконка дома"></li>
             <li class="blt-header">
               <h2>Жильё</h2>
             </li>
@@ -54,7 +53,7 @@
         </li>
         <li>
           <ul>
-            <li class="burger-ico"><img src="https://via.placeholder.com/74x70" alt="burger"></li>
+            <li class="burger-ico"><img src="https://via.placeholder.com/74x70" alt="Иконка бургера"></li>
             <li class="blt-header">
               <h2>Еда</h2>
             </li>
@@ -63,7 +62,7 @@
         </li>
         <li>
           <ul>
-            <li class="gift-ico"><img src="https://via.placeholder.com/64x76" alt="gift"></li>
+            <li class="gift-ico"><img src="https://via.placeholder.com/64x76" alt="Иконка подарка"></li>
             <li class="blt-header">
               <h2>Сувениры</h2>
             </li>
@@ -79,8 +78,8 @@
         <p>— №2 — <br>
           Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
-      
-      <img src="img/bridge-of-a-devil.jpg" width="800" height="400" alt="devil-bridge">
+
+      <img src="img/bridge-of-a-devil.jpg" width="800" height="400" alt="Уникальный мост над скалами сотворенный самой природой">
       <ul class="block__little-things">
         <li>
           <ul>
@@ -115,34 +114,33 @@
     <section>
       <h2>Заинтересовались ?</h2>
       <p class="min-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <img src="img/map.png" width="1200" height="594" alt="map">
+      <img src="img/map.png" width="1200" height="594" alt="Седона на карте Аризоны">
 
       <div class="modal search-hotel">
-        <h3>Поиск гостиницы в Седоне</h3>
-
-        <ul>
-          <li class="info-customer">Дата заезда:</li>
-          <li class="info-customer">Дата выезда:</li>
-          <li class="info-customer">Взрослые:</li>
-          <li class="info-customer info-customer-right">Дети:</li>
-        </ul>
-
-        <div block_date-of-stay>
-          <div class="sign-in">
-            <b class="select">24 апреля 2017</b>
-            <img class="FA-calendar" src="https://via.placeholder.com/21x22" alt="calendar">
+        <button type="button" class="modal-window-button">Поиск гостиницы в седоне</button>
+        <form action="hotels.html" method="get">
+          <div>
+            <label for="sign-in-date">
+              <p>Дата заезда:</p>
+            </label>
+            <input type="date" required name="sign-in-date" id="sign-in-date">
+            <label for="sign-out-date">
+              <p>Дата выезда:</p>
+            </label>
+            <input type="date" required name="sign-out-date" id="sign-out-date">
           </div>
-          <div class="sign-out">
-            <b class="select">4 июля 2017</b>
-            <img class="FA-calendar" src="https://via.placeholder.com/21x22" alt="calendar">
+          <div>
+            <label for="adult-count">
+              <p>Взрослые:</p>
+            </label>
+            <input type="number" required value="2" min="1" max="2" step="1" name="adult-count" id="adult-count">
+            <label for="child-count">
+              <p>Дети:</p>
+            </label>
+            <input type="number" value="0" min="0" max="10" step="1" name="child-count" id="child-count">
           </div>
-          <div class="buttons">
-            <b class="input-button">2</b>
-            <b class="input-button">0</b>
-          </div>
-        </div>
-
-        <button class="search-button" type="submit">Найти</button>
+          <input class="search-button" type="submit" value="Найти">
+        </form>
       </div>
     </section>
   </main>
@@ -168,6 +166,4 @@
       </a>
     </div>
   </footer>
-</body>
-
-</html>
+</body></html>
