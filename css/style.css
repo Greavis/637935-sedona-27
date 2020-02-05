@@ -1,0 +1,159 @@
+html {
+    background: ;
+    background-color: #fafafa;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 21px;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+/*----------------кнопки на странице hotel--------------------*/
+.button-more {
+    padding: 7px 17px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.button-reserve {
+    padding: 8px 17px;
+    border: none;
+    background-color: #766357;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button-reserve:focus {
+    outline: none;
+}
+
+/*иконки сортироки up-down*/
+.arrow {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.rating-text {
+    display: inline-block;
+    padding: 6px 14px;
+    background-color: #f2f2f2;
+    color: #666666;
+}
+
+.star {
+    display: inline-block;
+    padding: 5px;
+    width: 18px;
+    height: 17px;
+}
+/*---------------------top menu--------------------*/
+.menu-item a {
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 26px;
+}
+/*-------------------форма с настройкой поиска-------------------------*/
+.options {
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
+.options h3 {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/*--------------------hotels.html found block--------------------*/
+.result {
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.result b {
+    color: #000000;
+}
+
+.result .current-sort {
+    color: #81b3d2;
+}
+
+.result .type-sort a {
+    border-bottom: 1px dotted #81b3d2;
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.result li {
+    display: inline-block;
+}
+
+/*------------Black Bold Header---------------*/
+.blt-header {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.causes-header .min-description {
+    line-height: 26px;
+}
+
+/*----------------Blue block with white text--------------------*/
+.block-cause h2 {
+    background-color: #81b3d2;
+    color: #ffffff;
+    font-size: 21px;
+}
+
+/*-----------------offer--------------------*/
+.offer {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.offer-description {
+    line-height: 24px;
+}
+
+/*---------------footer------------------*/
+.contacts {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+
+.contacts a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.copyright p {
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 26px;
+}

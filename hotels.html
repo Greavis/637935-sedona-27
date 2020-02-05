@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <title>HTML Academy: Седона</title>
 </head>
 
@@ -22,63 +24,66 @@
     </header>
 
     <main>
-        <form action="" method="get">
-            <div class="options-1">
-                <h3>Инфраструктура:</h3>
-                <ul class="options-1__list">
-                    <li class="comfort">
-                        <label for="pool">Бассейн</label>
-                        <input type="checkbox" checked name="pool" id="pool">
-                    </li>
-                    <li class="comfort">
-                        <label for="parking">Парковка</label>
-                        <input type="checkbox" name="parking" id="parking">
-                    </li>
-                    <li class="comfort">
-                        <label for="wifi">Wi-Fi</label>
-                        <input type="checkbox" name="wifi" id="wifi">
-                    </li>
-                </ul>
-            </div>
+        <div class="options">
+            <form action="" method="get">
+                <div class="options-1">
+                    <h3>Инфраструктура:</h3>
+                    <ul class="options-1__list">
+                        <li class="comfort">
+                            <label for="pool">Бассейн</label>
+                            <input type="checkbox" checked name="pool" id="pool">
+                        </li>
+                        <li class="comfort">
+                            <label for="parking">Парковка</label>
+                            <input type="checkbox" name="parking" id="parking">
+                        </li>
+                        <li class="comfort">
+                            <label for="wifi">Wi-Fi</label>
+                            <input type="checkbox" name="wifi" id="wifi">
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="options-2">
-                <h3>Тип жилья:</h3>
-                <ul class="options-2__list">
-                    <li class="type-hotel">
-                        <label for="hotel">Гостиница</label>
-                        <input type="checkbox" checked name="hotel" id="hotel">
-                    </li>
-                    <li class="type-hotel">
-                        <label for="motel">Мотель</label>
-                        <input type="checkbox" checked name="motel" id="motel">
-                    </li>
-                    <li class="type-hotel">
-                        <label for="aparts">Апартаменты</label>
-                        <input type="checkbox" checked name="aparts" id="aparts">
-                    </li>
-                </ul>
-            </div>
+                <div class="options-2">
+                    <h3>Тип жилья:</h3>
+                    <ul class="options-2__list">
+                        <li class="type-hotel">
+                            <label for="hotel">Гостиница</label>
+                            <input type="checkbox" checked name="hotel" id="hotel">
+                        </li>
+                        <li class="type-hotel">
+                            <label for="motel">Мотель</label>
+                            <input type="checkbox" checked name="motel" id="motel">
+                        </li>
+                        <li class="type-hotel">
+                            <label for="aparts">Апартаменты</label>
+                            <input type="checkbox" checked name="aparts" id="aparts">
+                        </li>
+                    </ul>
+                </div>
 
-            <div class="options-3">
-                <h3>Стоимость в сутки (<span>Р</span>):</h3>
-                <output>От 0 | До 3000</output>
-                <input type="range" min="0" max="5000" step="500" name="range-cost" title="Стоимость аренды">
-                <button class="transparrent" type="submit">Показать</button>
-            </div>
-        </form>
+                <div class="options-3">
+                    <h3>Стоимость в сутки (<span>Р</span>):</h3>
+                    <output>От 0 | До 3000</output>
+                    <input class="range" type="range" min="0" max="50000" step="500" name="range-cost" value="0" title="Стоимость аренды">
+                    <input class="range" type="range" min="0" max="50000" step="500" name="range-cost" value="30000" title="Стоимость аренды">
+                    <button class="transparrent" type="submit">Показать</button>
+                </div>
+            </form>
+        </div>
 
         <section class="result">
             <h2 class="blt-header">Найдено: <span>3</span></h2>
 
             <b>Сортировка:</b>
             <ul class="sort">
-                <li class="for-price">По цене</li>
-                <li class="for-type"><a href="">По типу</a></li>
-                <li class="for-rating"><a href="">По рейтингу</a></li>
+                <li class="current-sort">По цене</li>
+                <li class="type-sort"><a href="">По типу</a></li>
+                <li class="type-sort"><a href="">По рейтингу</a></li>
             </ul>
             <div class="up-down-arrows">
-                <button type="button"><img src="https://via.placeholder.com/11x10" alt="arrow-up" title="Сортировка сверху вниз"></button>
-                <button type="button"><img src="https://via.placeholder.com/11x10" alt="arrow-down" title="Сортировка снизу вверх"></button>
+                <button class="arrow" type="button"><img src="img/icon-up-dir.svg" alt="arrow-up" title="Сортировка сверху вниз"></button>
+                <button class="arrow" type="button"><img src="img/icon-down-dir.svg" alt="arrow-down" title="Сортировка снизу вверх"></button>
             </div>
         </section>
 
@@ -104,10 +109,10 @@
                             <ul class="rating">
                                 <li class="rating-stars">
                                     <ul class="rating-wrap">
-                                        <li class="star"></li>
-                                        <li class="star"></li>
-                                        <li class="star"></li>
-                                        <li class="star"></li>
+                                        <li class="star"><img src="img/star.svg" alt=""></li>
+                                        <li class="star"><img src="img/star.svg" alt=""></li>
+                                        <li class="star"><img src="img/star.svg" alt=""></li>
+                                        <li class="star"><img src="img/star.svg" alt=""></li>
                                     </ul>
                                 </li>
                                 <li class="rating-text">Рейтинг:<span>8,5</span></li>
@@ -134,12 +139,12 @@
                             <ul class="rating">
                                 <li class="rating-stars">
                                     <ul class="rating-wrap">
-                                        <li class="star"></li>
-                                        <li class="star"></li>
-                                        <li class="star"></li>
+                                        <li class="star"><img src="img/star.svg" alt=""></li>
+                                        <li class="star"><img src="img/star.svg" alt=""></li>
+                                        <li class="star"><img src="img/star.svg" alt=""></li>
                                     </ul>
                                 </li>
-                                <li class="rating-stars">Рейтинг:<span>8,9</span></li>
+                                <li class="rating-text">Рейтинг:<span>8,9</span></li>
                             </ul>
                         </li>
                     </ul>
@@ -163,11 +168,11 @@
                             <ul class="rating">
                                 <li class="rating-stars">
                                     <ul class="rating-wrap">
-                                        <li class="star"></li>
-                                        <li class="star"></li>
+                                        <li class="star"><img src="img/star.svg" alt=""></li>
+                                        <li class="star"><img src="img/star.svg" alt=""></li>
                                     </ul>
                                 </li>
-                                <li class="rating-stars">Рейтинг:<span>9,2</span></li>
+                                <li class="rating-text">Рейтинг:<span>9,2</span></li>
                             </ul>
                         </li>
                     </ul>
@@ -193,10 +198,8 @@
         <div class="copyright">
             <a href="https://htmlacademy.ru">
                 <p>Website by:</p>
-                <img class="logo-htmlacademy" src="https://via.placeholder.com/115x41" width="115" height="41" alt="htmlacademy" title="Перейти на сайт разработчиков">
+                <img class="logo-htmlacademy" src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy" title="Перейти на сайт разработчиков">
             </a>
         </div>
     </footer>
-</body>
-
-</html>
+</body></html>
