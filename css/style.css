@@ -68,9 +68,18 @@ html {
     font-weight: 700;
     line-height: 26px;
 }
+.current-menu-item a {
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
+    color: #766357;
+    font-weight: 700;
+}
 /*-------------------форма с настройкой поиска-------------------------*/
 .options {
-    background-color: #81b3d2;
+    width: 1200px;
+    height: auto;
+    background: #81b3d2 url("/img/filter_background.jpg");
     color: #ffffff;
 }
 
@@ -118,13 +127,6 @@ html {
     line-height: 26px;
 }
 
-/*----------------Blue block with white text--------------------*/
-.block-cause h2 {
-    background-color: #81b3d2;
-    color: #ffffff;
-    font-size: 21px;
-}
-
 /*-----------------offer--------------------*/
 .offer {
     background-color: #ffffff;
@@ -156,4 +158,52 @@ html {
     background-color: #ffffff;
     color: #000000;
     line-height: 26px;
+}
+/*--------------background index-----------------*/
+.welcome-content{
+    width: 1200px;
+    height: 773px;
+    background: #0000ff url("../img/background_photo.jpg") no-repeat center;
+}
+.causes-header{
+    background-color: #ffffff;
+}
+/* первый блок с преимуществами*/
+.block-cause {
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+.block-cause h2 {
+    font-size: 21px;
+}
+.features-image-right{
+    width: 800px;
+    height: 256px;
+    background: #f2f2f2 url("/img/real-city.jpg") no-repeat center;
+}
+.non-mark{
+    list-style: none;
+}
+/* второй блок преимуществ */
+.features-image-left{
+    width: 800px;
+    height: 256px;
+    background: #f2f2f2 url("/img/bridge-of-a-devil.jpg") no-repeat center;
+}
+.gray, .gray h2 {
+    background-color: #eeeeee;
+}
+/* социалки*/
+.social-icon{
+    width: 35px;
+    height: 35px;
+    background-color: #81B3D2;
+}
+.social ul{
+    list-style: none;
+}
+.copyright a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
 }
