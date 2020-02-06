@@ -100,8 +100,10 @@ html {
     color: #000000;
 }
 
-.result .current-sort {
+.current-sort a{
     color: #81b3d2;
+    pointer-events: none;
+    cursor: default;
 }
 
 .result .type-sort a {
