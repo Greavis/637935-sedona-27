@@ -62,7 +62,6 @@ html {
 }
 /*---------------------top menu--------------------*/
 .menu-item a {
-    background-color: #ffffff;
     color: #000000;
     text-decoration: none;
     font-weight: 700;
@@ -79,7 +78,7 @@ html {
 .options {
     width: 1200px;
     height: auto;
-    background: #81b3d2 url("/img/filter_background.jpg");
+    background: #81b3d2 url("../img/filter_background.jpg");
     color: #ffffff;
 }
 
@@ -143,8 +142,10 @@ html {
 }
 
 /*---------------footer------------------*/
-.contacts {
+.header, .footer{
     background-color: #ffffff;
+}
+.contacts {
     color: #000000;
     font-weight: 700;
     font-size: 21px;
@@ -181,7 +182,7 @@ html {
 .features-image-right{
     width: 800px;
     height: 256px;
-    background: #f2f2f2 url("/img/real-city.jpg") no-repeat center;
+    background: #f2f2f2 url("../img/real-city.jpg") no-repeat center;
 }
 .non-mark{
     list-style: none;
@@ -190,7 +191,7 @@ html {
 .features-image-left{
     width: 800px;
     height: 256px;
-    background: #f2f2f2 url("/img/bridge-of-a-devil.jpg") no-repeat center;
+    background: #f2f2f2 url("../img/bridge-of-a-devil.jpg") no-repeat center;
 }
 .gray, .gray h2 {
     background-color: #eeeeee;
