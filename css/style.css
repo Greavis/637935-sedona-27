@@ -1,17 +1,32 @@
 html {
     background: ;
-    background-color: #fafafa;
+    background-color: #f2f2f2;
     color: #333333;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 14px;
     font-family: 'PT Sans', sans-serif;
     line-height: 21px;
+    letter-spacing: 0.12px;
 }
-
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 15px 2px rgba(0,0,0,0.2);
+}
 .visually-hidden {
     display: none;
 }
+.non-mark{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 /*----------------кнопки на странице hotel--------------------*/
 .button-more {
@@ -61,11 +76,35 @@ html {
     height: 17px;
 }
 /*---------------------top menu--------------------*/
+
+.top-menu__items{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    width: 239px;
+    line-height: 56px;
+    white-space: nowrap;
+    padding: 0px 70px;
+}
+.empty-center{
+    width: 244px;
+}
+.logo{
+    position: absolute;
+    left: 530px;
+    top: 0;
+}
 .menu-item a {
+    margin-left: auto;
+    margin-right: auto;
     color: #000000;
     text-decoration: none;
     font-weight: 700;
-    line-height: 26px;
+    line-height: 56px;
 }
 .current-menu-item a {
     cursor: default;
@@ -125,6 +164,7 @@ html {
 }
 
 .causes-header .min-description {
+    margin-top: 10px;
     line-height: 26px;
 }
 
@@ -163,43 +203,114 @@ html {
     line-height: 26px;
 }
 /*--------------background index-----------------*/
+
 .welcome-content{
-    width: 1200px;
-    height: 773px;
-    background: #0000ff url("../img/background_photo.jpg") no-repeat center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    background: #0000ff url("../img/background_photo.jpg") no-repeat;
+    background-size: cover;
+    background-position: 0 -55px;
+}
+
+.welcome-img{
+    margin-top: 77px;
+    align-self: center;
+}
+.polygon-img{
+    margin-top: 22px;
 }
 .causes-header{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 43px;
     background-color: #ffffff;
 }
 /* первый блок с преимуществами*/
-.block-cause {
+.block-cause-left {
+    display: flex;
     background-color: #81b3d2;
     color: #ffffff;
+    min-height: 256px;
+    margin-top: 37px;
+}
+.block-cause-right{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #81b3d2;
+    color: #ffffff;
+    min-height: 256px;
+    margin-top: 72px;
 }
 .block-cause h2 {
     font-size: 21px;
 }
+.features{
+    display: flex;
+    flex-direction: column;
+}
+.features-header{
+    width: 400px;
+    text-align: center;
+    margin-top: 30px;
+}
+.block-little-things{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-top: 55px;
+    text-align: center;
+}
+.little-things-item{
+    padding: 0px 10px 10px 30px;
+}
+.little-things-item li:first-of-type{
+    padding-bottom: 5px;
+}
+.little-things-item li:nth-of-type(2){
+    padding-bottom: 3px;
+}
 .features-image-right{
     width: 800px;
-    height: 256px;
-    background: #f2f2f2 url("../img/real-city.jpg") no-repeat center;
+    background: #f2f2f2 url("../img/real-city.jpg") no-repeat;
+    background-size: cover;
 }
-.non-mark{
-    list-style: none;
-}
+
 /* второй блок преимуществ */
 .features-image-left{
     width: 800px;
-    height: 256px;
-    background: #f2f2f2 url("../img/bridge-of-a-devil.jpg") no-repeat center;
+    background: #f2f2f2 url("../img/bridge-of-a-devil.jpg") no-repeat;
+    background-size: cover;
 }
 .gray, .gray h2 {
     background-color: #eeeeee;
+    padding-top: 14px;
+    padding-bottom: 43px;
+}
+
+/* offer ЗАИНТЕРЕСОВАЛИСЬ карта и тд*/
+.offer{
+    text-align: center;
+    padding-top: 25px;
+    letter-spacing: -0.1px;
+}
+.offer-description{
+    text-align: center;
+    width: 420px;
+    margin: 0 auto;
+}
+.search-button{
+    width: 450px;
+    padding: 20px;
+    background-color: #766357;
+    color: #ffffff;
+    margin: 0 auto;
 }
 /* социалки*/
 .social-icon{
     width: 35px;
-    height: 35px;
     background-color: #81B3D2;
 }
 .social ul{
