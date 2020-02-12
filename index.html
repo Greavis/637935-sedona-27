@@ -12,10 +12,14 @@
 <body>
     <header>
         <nav class="top-menu">
-            <ul class="top-menu__items non-mark">
+            <ul class="top-menu_left_items non-mark">
                 <li class="menu-item" title="Главная страница"><a href="">Информация</a></li>
                 <li class="menu-item" title="Обзоры гостиниц и города"><a href="">Фото и видео</a></li>
-                <li class="menu-item empty-center"><img class="logo" src="img/logo.png" width="140" height="72" alt="logo-sedona"></li>
+            </ul>
+            <div class="logo-wrap">
+                <img class="logo" src="img/logo.png" width="140" height="72" alt="logo-sedona">
+            </div>
+            <ul class="top-menu_right_items non-mark">
                 <li class="menu-item" title="Посмотреть на карте"><a href="">Карта штата</a></li>
                 <li class="menu-item" title="Выбрать гостиницу"><a href="hotels.html">Гостиницы</a></li>
             </ul>
@@ -42,7 +46,7 @@
                     <span>— №1 —</span>
                     <p>Седона — не аттракцион для туристов, <br> там течёт своя жизнь</p>
                 </div>
-                <div class="features-image-right"></div>
+                <div class="features-image-right"><img src="img/real-city.jpg" width="800" height="256" alt="sedona city"></div>
             </div>
 
             <ul class="block-little-things non-mark">
@@ -83,9 +87,7 @@
                     <span>— №2 —</span>
                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
-                <div class="features-image-left">
-            </div>
-
+                <div class="features-image-left"><img src="img/bridge-of-a-devil.jpg" alt="rocks and another somthing shit"></div>
             </div>
 
             <ul class="block-little-things gray non-mark">
@@ -123,9 +125,8 @@
             <h2 class="offer">Заинтересовались ?</h2>
             <p class="offer-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
             <img class="visually-hidden" src="img/map.png" width="1200" height="594" alt="Седона на карте Аризоны">
-
             <div class="modal search-hotel">
-                <button type="button" class="modal-window-button">Поиск гостиницы в седоне</button>
+                <button type="button">Поиск гостиницы в седоне</button>
                 <form class="visually-hidden" action="hotels.html" method="get">
                     <div class="date">
                         <div class="date__sign-in">
@@ -147,31 +148,32 @@
                             <input type="number" value="0" min="0" max="10" step="1" name="child-count" id="child-count">
                         </div>
                     </div>
-                    <button class="search-button" type="submit">Найти</button>
+                    <button type="button">Найти</button>
                 </form>
             </div>
         </section>
     </main>
 
     <footer>
-        <p class="contacts">
-            #VISITSEDONA <br>
-            <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
-        </p>
+        <div class="footer-wrapper">
+            <p class="contacts">
+                #VISITSEDONA <br>
+                <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
+            </p>
 
-        <div class="social">
-            <ul class="social-wrap">
-                <li class="social-icon"><a href=""><img src="img/twitter.svg" alt=""></a></li>
-                <li class="social-icon"><a href=""><img src="img/fb-icon.svg" alt=""></a></li>
-                <li class="social-icon"><a href=""><img src="img/youtube.svg" alt=""></a></li>
-            </ul>
-        </div>
+            <div class="social">
+                <ul class="social-wrap">
+                    <li class="social-icon"><a href=""><img src="img/twitter.svg" alt=""></a></li>
+                    <li class="social-icon"><a href=""><img src="img/fb-icon.svg" alt=""></a></li>
+                    <li class="social-icon"><a href=""><img src="img/youtube.svg" alt=""></a></li>
+                </ul>
+            </div>
 
-        <div class="copyright">
-            <a href="https://htmlacademy.ru">
-                <p>Website by:</p>
-                <img class="logo-htmlacademy" src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
-            </a>
+            <div class="copyright">
+                <a href="https://htmlacademy.ru">
+                    <img class="logo-htmlacademy" src="img/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy">
+                </a>
+            </div>
         </div>
     </footer>
 </body></html>
